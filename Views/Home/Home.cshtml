@@ -1,0 +1,130 @@
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Home";
+}
+
+<main class="container my-5">
+
+    <div class="menu" id="menu">
+        <div class="firstHalf tile" id="firstHalf">
+            <div class="hour">
+
+                <h1 id="comprimento"></h1>
+
+                <div>
+                    <h1 id="hora"></h1>
+                    <p id="data"></p>
+                </div>
+
+            </div>
+
+            <div class="ad">
+                <img src="~/img/batman.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="secondHalf">
+            <div class="semiMenu">
+                <div class="semiMenuGrid">
+                    <div class="opt tile" id="sub_1">
+                        <a class="anchorBorderNone" href="proList.html"><i class="fa-solid fa-brain"></i></a>
+                        <p>Psicos</p>
+                    </div>
+                    <div class="opt tile" id="sub_2">
+                        <a class="anchorBorderNone" href="config.html"><i class="fa-solid fa-gear"></i></a>
+                        <p>Configurações</p>
+                    </div>
+                    <div class="opt tile" id="sub_3">
+                        <a class="anchorBorderNone" href="chats.html"><i class="fa-regular fa-comments"></i></a>
+                        <p>Chats</p>
+                    </div>
+                    <div class="opt tile" id="sub_4">
+                        <a class="anchorBorderNone" href="profile.html"><img class="picture-user" src="~/img/dog.png" alt=""></a>
+                        <p>Perfil</p>
+                    </div>
+                </div>
+                <div class="notification notiOut tile" id="notification">
+
+                    <div class="noti">
+                        <div class="notiHeader">
+                            <a href="profile.html"><img class="picture-user" src="~/img/dog.png" alt=""></a>
+                            <i onclick="removeNoti(this)" class="fa-solid fa-x"></i>
+                        </div>
+                        <p><strong>Mensagem do seu psico:</strong> <br> Aham, ta bem ruim</p>
+                        <p class="notiHour">19:30</p>
+                    </div>
+                    <div class="noti">
+                        <div class="notiHeader">
+                            <a href="profile.html"><img class="picture-user" src="~/img/dog.png" alt=""></a>
+                            <i onclick="removeNoti(this)" class="fa-solid fa-x"></i>
+                        </div>
+                        <p><strong>Mensagem do seu psico:</strong> <br> Aham, ta bem ruim</p>
+                        <p class="notiHour">19:30</p>
+                    </div>
+                    <div class="noti">
+                        <div class="notiHeader">
+                            <a href="profile.html"><img class="picture-user" src="~/img/dog.png" alt=""></a>
+                            <i onclick="removeNoti(this)" class="fa-solid fa-x"></i>
+                        </div>
+                        <p><strong>Mensagem do seu psico:</strong> <br> Aham, ta bem ruim</p>
+                        <p class="notiHour">19:30</p>
+                    </div>
+                        
+                </div>
+            </div>
+
+            <div class="schedule tile" id="schedule">
+                <div class="days">
+                    <div class="schedule_day">
+                        <span class="consult">
+                            <a href="appointments.html"><img class="picture-user" src="~/img/dog.png" alt=""></a>
+                            <span>19H48</span>
+                        </span>
+                        <p>domingo</p>
+                    </div>
+                    <div class="schedule_day">
+                        <span class="consult">
+                            <a href="appointments.html"><img class="picture-user" src="~/img/dog.png" alt=""></a>
+                            <span>19H48</span>
+                        </span>
+                        <p>segunda</p>
+                    </div>
+                    <div class="schedule_day">
+                        <span class="consult">
+                            <p>Sem</p>
+                        </span>
+                        <p>terça</p>
+                    </div>
+                    <div class="schedule_day">
+                        <span class="consult">
+                            <a href="appointments.html"><img class="picture-user" src="~/img/dog.png" alt=""></a>
+                            <span>19H48</span>
+                        </span>
+                        <p>quarta</p>
+                    </div>
+                    <div class="schedule_day">
+                        <span class="consult">
+                            <p>Sem</p>
+                        </span>
+                        <p>quinta</p>
+                    </div>
+                    <div class="schedule_day">
+                        <span class="consult">
+                            <a href="appointments.html"><img class="picture-user" src="~/img/dog.png" alt=""></a>
+                            <span>19H48</span>
+                        </span>
+                        <p>sexta</p>
+                    </div>
+                    <div class="schedule_day">
+                        <span class="consult">
+                            <a href="profile.html"><img class="picture-user" src="~/img/dog.png" alt=""></a>
+                            <span>19H48</span>
+                        </span>
+                        <p>sábado</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</main>

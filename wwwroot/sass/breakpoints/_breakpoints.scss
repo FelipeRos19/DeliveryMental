@@ -1,0 +1,43 @@
+@media (max-width: $smaller-screen) {
+
+}
+
+@media (max-width: $small-screen) {
+    .gridSection {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .gallery {
+        max-height: 35vh !important;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (min-width: $medium-screen) {
+    .gridSection {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (min-width: $large-screen) {
+
+}
+
+@media (min-width: $extra-large-screen) {
+    .gridSection {
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 40vh;
+    }
+}
+
+@media (min-width: $xx-large-screen) {
+
+}
+
+@media (min-width: $xxx-large-screen) {
+
+}

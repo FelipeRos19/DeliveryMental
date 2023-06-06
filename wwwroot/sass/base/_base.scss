@@ -1,0 +1,136 @@
+::selection {
+    background-color: black;
+}
+
+p {
+    margin: 0 !important;
+}
+
+body {
+    color: $tertiary-color;
+    background-color: $primary-color;
+}
+
+hr {
+    border: 2px solid #16A085;
+    border-radius: 2px;
+    width: 100%;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.anchorBorderNone {
+    border: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: .5s;
+    border-radius: 7px;
+    padding: 7px;
+    border: 1px solid $tertiary-color;
+}
+
+a:hover {
+    background-color: $tertiary-color;
+    color: $primary-color;
+}
+
+i {
+    text-align: center;
+}
+
+.card {
+    background-color: $tertiary-color;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: $secondary-color;
+    border-radius: 10px;
+    gap: 20px;
+    height: 100%;
+    text-align: center;
+}
+
+.picture-user {
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.search {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.searchInput {
+    text-indent: 25px;
+}
+
+.show {
+    display: flex !important;
+    flex-direction: column;
+    background-color: $primary-color;
+    border-color: $tertiary-color;
+    padding: 4px;
+    gap: 5px;
+}
+
+.tags {
+    position: absolute;
+    top: -13px;
+    left: 15px;
+    z-index: 10;
+    background-color: $secondary-color;
+    padding: 5px;
+    border-radius: 4px;
+    transition: .5s;
+}
+
+.tags:hover {
+    background-color: $tertiary-color;
+    color: $secondary-color;
+    cursor: pointer;
+}
+
+.fa-magnifying-glass, .fa-paper-plane {
+    background-color: $primary-color;
+    color: $tertiary-color;
+    padding: 10px;
+    border-radius: 6px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.fa-magnifying-glass:hover, .fa-paper-plane:hover {
+    background-color: $tertiary-color;
+    color: $primary-color;
+}
+
+::-webkit-scrollbar {
+    background-color: $tertiary-color;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $secondary-color;
+    border-radius: 3px;
+}
+
+.rate {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}

@@ -1,0 +1,57 @@
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Profile";
+}
+
+<main class="container">
+    <div class="profileWrapp">
+        <form id="profile" action="" method="post">
+            <div>
+                <img class="picture" id="imgUsuario" src="~/img/dog.png" alt="">
+            </div>
+
+            <div>
+                <i class="fa-solid fa-star"></i>
+                <span>4.5/5</span>
+            </div>
+
+            <div>
+                <p>Quantidade de avaliações: 01</p>
+            </div>
+
+            <div class="">
+                <input onchange="mostraImagem(this)" type="file" class="form-control" id="formFile"
+                    aria-describedby="emailHelp">
+            </div>
+
+            <div class="">
+                <label for="name" class="form-label">Seu nome</label>
+                <input type="text" class="form-control">
+            </div>
+
+            <div class="">
+                <label for="surname" class="form-label">Seu sobrenome</label>
+                <input type="text" class="form-control">
+            </div>
+
+            <div class="">
+                <label for="email" class="form-label">Seu email</label>
+                <input type="email" class="form-control">
+            </div>
+
+            <button id="btn-profile" form="profile" type="submit">Salvar</button>
+        </form>
+    </div>
+</main>
+
+<div class="navWrapp">
+    <nav class="container">
+        <a href="appointments.html"><i class="fa-solid fa-file-signature"></i></a>
+
+        <a href="proList.html"><i class="fa-solid fa-brain"></i></a>
+
+        <a href="home.html"><i class="fa-solid fa-house"></i></a>
+
+        <a href="profile.html"><img class="picture-user" src="~/img/dog.png" alt=""></a>
+    </nav>
+</div>

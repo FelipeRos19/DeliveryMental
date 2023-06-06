@@ -1,0 +1,90 @@
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Chat";
+}
+
+<main class="container my-5">
+
+    <div class="chatHeading">
+        <div>
+
+            <a class="anchorBorderNone" href="home.html"><i class="fa-solid fa-house"></i></a>
+
+        </div>
+        <div id="chatHeadingMeio">
+            <img class="picture" src="~/img/dog.png" alt="">
+            <p>nome do psico</p>
+        </div>
+        <div>
+            <i class="fa-solid fa-video"></i>
+        </div>
+    </div>
+    <div class="chat" id="chat">
+        <div class="message yourMessage">
+            <p>minha mensagem</p>
+            <p class="messageDate">19:30</p>
+        </div>
+        <div class="message theirMessage">
+            <p>mensagem do psico</p>
+            <p class="messageDate">19:30</p>
+        </div>
+        <div class="message theirMessage">
+            <p>mensagem do psico</p>
+            <p class="messageDate">19:30</p>
+        </div>
+        <div class="message yourMessage">
+            <p>minha mensagem</p>
+            <p class="messageDate">19:30</p>
+        </div>
+        <div class="message theirMessage">
+            <p>mensagem do psico</p>
+            <p class="messageDate">19:30</p>
+        </div>
+        <div class="message yourMessage">
+            <p>minha mensagem</p>
+            <p class="messageDate">19:30</p>
+        </div>
+        <div class="message theirMessage">
+            <p>mensagem do psico</p>
+            <p class="messageDate">19:30</p>
+        </div>
+        <div class="message yourMessage">
+            <p>minha mensagem</p>
+            <p class="messageDate">19:30</p>
+        </div>
+        <div class="message theirMessage">
+            <p>mensagem do psico</p>
+            <p class="messageDate">19:30</p>
+        </div>
+        <div class="message yourMessage">
+            <p>minha mensagem</p>
+            <p class="messageDate">19:30</p>
+        </div>
+        <div class="message theirMessage">
+            <p>mensagem do psico</p>
+            <p class="messageDate">19:30</p>
+        </div>
+        <div class="message yourMessage">
+            <p>minha mensagem</p>
+            <p class="messageDate">19:30</p>
+        </div>
+        <div class="message theirMessage">
+            <p>mensagem do psico</p>
+            <p class="messageDate">19:30</p>
+        </div>
+
+        <form class="submitMessage">
+
+            <input type="text" class="form-control">
+            <button type="submit" class="btn-reset"><i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+    </div>
+
+</main>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function (event) {
+        var chat = document.getElementById("chat");
+        chat.scrollTop = chat.scrollHeight;
+    });
+</script>

@@ -1,0 +1,72 @@
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Appointments";
+}
+
+<nav>
+    <form method="GET" class="search">
+        <div class="dropdown">
+                
+            <i class="tags dropdown-toggle fa-solid fa-bars" data-bs-toggle="dropdown" aria-expanded="false"></i>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Pediatra</a></li>
+                <li><a class="dropdown-item" href="#">Casal</a></li>
+                <li><a class="dropdown-item" href="#">Suicidio</a></li>
+            </ul>
+        </div>
+
+        <input type="text" class="form-control searchInput" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <button type="submit" class="btn-reset"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </form>
+</nav>
+
+<main class="mt-5 container mainAPT">
+
+    <div class="appointments">
+        <div class="operation">
+            <p class="stretch">Operação 1</p>
+            <p class="stretch">Nome do psico</p>
+            <p>04/12/2023</p>
+            <p>11:00 pm</p>
+        </div>
+
+        <div class="operation">
+            <p class="stretch">Operação 2</p>
+            <p class="stretch">Nome do psico</p>
+            <p>04/12/2023</p>
+            <p>11:00 pm</p>
+        </div>
+
+        <div class="operation">
+            <p class="stretch">Operação 3</p>
+            <p class="stretch">Nome do psico</p>
+            <p>04/12/2023</p>
+            <p>11:00 pm</p>
+        </div>
+
+        <div class="operation">
+            <p class="stretch">Operação 4</p>
+            <p class="stretch">Nome do psico</p>
+            <p>04/12/2023</p>
+            <p>11:00 pm</p>
+        </div>
+    </div>
+    <div id="resume" class="resume">
+        <div class="card">
+                
+        </div>
+    </div>
+</main>
+
+
+<div class="navWrapp">
+    <nav class="container">
+        <a href="appointments.html"><i class="fa-solid fa-file-signature"></i></a>
+
+        <a href="proList.html"><i class="fa-solid fa-brain"></i></a>
+
+        <a href="home.html"><i class="fa-solid fa-house"></i></a>
+
+        <a href="profile.html"><img class="picture-user" src="~/img/dog.png" alt=""></a>
+    </nav>
+</div>

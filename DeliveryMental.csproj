@@ -1,0 +1,93 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>110cae90-b2ce-493b-8e58-9e85d04ef80e</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>.</DockerfileContext>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="Views\Account\Login.cshtml" />
+    <Content Remove="Views\Account\Profile.cshtml" />
+    <Content Remove="Views\Account\Register.cshtml" />
+    <Content Remove="Views\Chat\Chat.cshtml" />
+    <Content Remove="Views\Chat\Chats.cshtml" />
+    <Content Remove="Views\Configuration\Config.cshtml" />
+    <Content Remove="Views\Operations\Appointments.cshtml" />
+    <Content Remove="Views\Operations\PsiList.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Views\Account\Login.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Views\Account\Profile.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Views\Account\Register.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Views\Chat\Chat.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Views\Chat\Chats.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Views\Configuration\Config.cshtml" />
+    <None Include="Views\Home\Home.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Views\Home\Index.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Views\Operations\Appointments.cshtml" />
+    <None Include="Views\Operations\PsiList.cshtml" />
+    <None Include="wwwroot\img\blob-scene-haikei.svg" />
+    <None Include="wwwroot\img\blurry-gradient-haikei.svg" />
+    <None Include="wwwroot\img\cursor.cur" />
+    <None Include="wwwroot\img\stacked-peaks-haikei.svg" />
+    <None Include="wwwroot\img\user" />
+    <None Include="wwwroot\js\app.js" />
+    <None Include="wwwroot\js\reveal.js" />
+    <None Include="wwwroot\sass\abstracts\_variables.scss" />
+    <None Include="wwwroot\sass\base\_base.scss" />
+    <None Include="wwwroot\sass\base\_reset.scss" />
+    <None Include="wwwroot\sass\base\_typography.scss" />
+    <None Include="wwwroot\sass\breakpoints\_breakpoints.scss" />
+    <None Include="wwwroot\sass\components\_buttons.scss" />
+    <None Include="wwwroot\sass\components\_checkbox.scss" />
+    <None Include="wwwroot\sass\components\_inputs.scss" />
+    <None Include="wwwroot\sass\components\_selects.scss" />
+    <None Include="wwwroot\sass\layout\_footer.scss" />
+    <None Include="wwwroot\sass\layout\_forms.scss" />
+    <None Include="wwwroot\sass\layout\_header.scss" />
+    <None Include="wwwroot\sass\layout\_nav.scss" />
+    <None Include="wwwroot\sass\main.scss" />
+    <None Include="wwwroot\sass\pages\_appointments.scss" />
+    <None Include="wwwroot\sass\pages\_chat.scss" />
+    <None Include="wwwroot\sass\pages\_chats.scss" />
+    <None Include="wwwroot\sass\pages\_config.scss" />
+    <None Include="wwwroot\sass\pages\_home.scss" />
+    <None Include="wwwroot\sass\pages\_index.scss" />
+    <None Include="wwwroot\sass\pages\_login.scss" />
+    <None Include="wwwroot\sass\pages\_profile.scss" />
+    <None Include="wwwroot\sass\pages\_proList.scss" />
+    <None Include="wwwroot\sass\pages\_register.scss" />
+    <None Include="wwwroot\sass\style.css.map" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNet.Identity.EntityFramework" Version="2.2.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.18.1" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="7.0.4" />
+  </ItemGroup>
+
+</Project>
