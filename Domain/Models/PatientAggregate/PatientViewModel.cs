@@ -3,7 +3,8 @@
     public class PatientViewModel
     {
 
-        public string LongId { get; set; }
+        //TODO: Revisar o Tipo que deve ser utilizado para o ID (Alterado de String para Long)
+        public long Id { get; set; }
 
         public string Name { get; set; }
 
